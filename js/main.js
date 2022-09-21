@@ -6,6 +6,15 @@ $('#mobile-menu').meanmenu({
 	meanMenuContainer: '.mobile-menu',
 	meanScreenWidth: "992"
 });
+	
+	$(".tp-menu-bar").on("click", function () {
+		$(".tpoffcanvas").addClass("opened");
+		$(".body-overlay").addClass("apply");
+	});
+	$(".close-btn").on("click", function () {
+		$(".tpoffcanvas").removeClass("opened");
+		$(".body-overlay").removeClass("apply");
+	});
 
 // One Page Nav
 var top_offset = $('.header-area').height() - 10;
